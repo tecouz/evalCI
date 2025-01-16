@@ -44,7 +44,7 @@ namespace DevineLeNombre.Unitests
             string result = game.Guess(target); // Le bon nombre
 
             // Assert
-            Assert.AreEqual($"Bravo ! Vous avez trouvé le nombre mystère {target} en 1 tentatives.", result);
+            Assert.AreEqual($"Bravo ! Vous avez trouvï¿½ le nombre mystï¿½re {target} en 1 tentatives.", result);
         }
 
         [TestMethod]
@@ -54,7 +54,7 @@ namespace DevineLeNombre.Unitests
             var game = new RandomNumberGame();
 
             // Act
-            string result = game.Guess(0); // Hors de la plage valide (inférieure à 1)
+            string result = game.Guess(0); // Hors de la plage valide (infï¿½rieure ï¿½ 1)
 
             // Assert
             Assert.AreEqual("Veuillez entrer un nombre entre 1 et 100.", result);
@@ -67,7 +67,7 @@ namespace DevineLeNombre.Unitests
             var game = new RandomNumberGame();
 
             // Act
-            string result = game.Guess(101); // Hors de la plage valide (supérieure à 100)
+            string result = game.Guess(101); // Hors de la plage valide (supï¿½rieure ï¿½ 100)
 
             // Assert
             Assert.AreEqual("Veuillez entrer un nombre entre 1 et 100.", result);
