@@ -44,7 +44,7 @@ namespace DevineLeNombre.Unitests
             string result = game.Guess(target); // Le bon nombre
 
             // Assert
-            Assert.AreEqual($"Bravo ! Vous avez trouv� le nombre myst�re {target} en 1 tentatives.", result);
+            Assert.AreEqual($"Bravo ! Vous avez trouvé le nombre mystère {target} en 1 tentatives.", result);
         }
 
         [TestMethod]
